@@ -65,73 +65,72 @@ class Compra : AppCompatActivity() {
         val imgConchi = findViewById<ImageView>(R.id.imgConchi)
 
         //Inicializar TextView
-        txtPatiMiau.text = "Café Patimiau ${carrito.cantidad[0]}"
-
-        txtCatLovers.text = "Combo catlovers ${carrito.cantidad[1]}"
-        txtMochi1.text = "Pack mochis 1 ${carrito.cantidad[2]}"
-        txtMochi2.text = "Pack mochis 2 ${carrito.cantidad[3]}"
-        txtMichi.text = "Michidango ${carrito.cantidad[4]}"
-        txtConchi.text = "Conchirilakkuma ${carrito.cantidad[5]}"
+        txtPatiMiau.text = "Café Patimiau x${carrito.cantidad[0]}"
+        txtCatLovers.text = "Combo catlovers x${carrito.cantidad[1]}"
+        txtMochi1.text = "Pack mochis 1 x${carrito.cantidad[2]}"
+        txtMochi2.text = "Pack mochis 2 x${carrito.cantidad[3]}"
+        txtMichi.text = "Michidango x${carrito.cantidad[4]}"
+        txtConchi.text = "Conchirilakkuma x${carrito.cantidad[5]}"
 
         //Sumas y Restas
         btnSumPatiMiau.setOnClickListener {
-            carrito.cantidad[0]++
-            txtPatiMiau.text = "Café Patimiau ${carrito.cantidad[0]}"
+            carrito.agregar(0)
+            txtPatiMiau.text = "Café Patimiau x${carrito.cantidad[0]}"
         }
 
         btnSumCatLovers.setOnClickListener {
-            carrito.cantidad[1]++
-            txtCatLovers.text = "Combo catlovers ${carrito.cantidad[1]}"
+            carrito.agregar(1)
+            txtCatLovers.text = "Combo catlovers x${carrito.cantidad[1]}"
         }
 
         btnSumMochi1.setOnClickListener {
-            carrito.cantidad[2]++
-            txtMochi1.text = "Pack mochis 1 ${carrito.cantidad[2]}"
+            carrito.agregar(2)
+            txtMochi1.text = "Pack mochis 1 x${carrito.cantidad[2]}"
         }
 
         btnSumMochi2.setOnClickListener {
-            carrito.cantidad[3]++
-            txtMochi2.text = "Pack mochis 2 ${carrito.cantidad[3]}"
+            carrito.agregar(3)
+            txtMochi2.text = "Pack mochis 2 x${carrito.cantidad[3]}"
         }
 
         btnSumMichi.setOnClickListener {
-            carrito.cantidad[4]++
-            txtMichi.text = "Michidango ${carrito.cantidad[4]}"
+            carrito.agregar(4)
+            txtMichi.text = "Michidango x${carrito.cantidad[4]}"
         }
 
         btnSumConchi.setOnClickListener {
-            carrito.cantidad[5]++
-            txtConchi.text = "Conchirilakkuma ${carrito.cantidad[5]}"
+            carrito.agregar(5)
+            txtConchi.text = "Conchirilakkuma x${carrito.cantidad[5]}"
         }
 
         btnResPatiMiau.setOnClickListener {
-            if (carrito.cantidad[0] > 0) carrito.cantidad[0]--
-            txtPatiMiau.text = "Café Patimiau ${carrito.cantidad[0]}"
+            if (carrito.cantidad[0] > 0) carrito.restar(0)
+            txtPatiMiau.text = "Café Patimiau x${carrito.cantidad[0]}"
         }
 
         btnResCatLovers.setOnClickListener {
-            if (carrito.cantidad[1] > 0) carrito.cantidad[1]--
-            txtCatLovers.text = "Combo catlovers ${carrito.cantidad[1]}"
+            if (carrito.cantidad[1] > 0) carrito.restar(1)
+            txtCatLovers.text = "Combo catlovers x${carrito.cantidad[1]}"
         }
 
         btnResMochi1.setOnClickListener {
-            if (carrito.cantidad[2] > 0) carrito.cantidad[2]--
-            txtMochi1.text = "Pack mochis 1 ${carrito.cantidad[2]}"
+            if (carrito.cantidad[2] > 0) carrito.restar(2)
+            txtMochi1.text = "Pack mochis 1 x${carrito.cantidad[2]}"
         }
 
         btnResMochi2.setOnClickListener {
-            if (carrito.cantidad[3] > 0) carrito.cantidad[3]--
-            txtMochi2.text = "Pack mochis 2 ${carrito.cantidad[3]}"
+            if (carrito.cantidad[3] > 0) carrito.restar(3)
+            txtMochi2.text = "Pack mochis 2 x${carrito.cantidad[3]}"
         }
 
         btnResMichi.setOnClickListener {
-            if (carrito.cantidad[4] > 0) carrito.cantidad[4]--
-            txtMichi.text = "Michidango ${carrito.cantidad[4]}"
+            if (carrito.cantidad[4] > 0) carrito.restar(4)
+            txtMichi.text = "Michidango x${carrito.cantidad[4]}"
         }
 
         btnResConchi.setOnClickListener {
-            if (carrito.cantidad[5] > 0) carrito.cantidad[5]--
-            txtConchi.text = "Conchirilakkuma ${carrito.cantidad[5]}"
+            if (carrito.cantidad[5] > 0) carrito.restar(5)
+            txtConchi.text = "Conchirilakkuma x${carrito.cantidad[5]}"
         }
 
     }
