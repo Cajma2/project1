@@ -65,12 +65,12 @@ class Ticket : AppCompatActivity() {
 
         val Total = Total1 + Total2 + Total3 + Total4 + Total5 + Total6
 
-        txtCantPatiMiau.text = "Cafe PatiMiau\t x${carrito.cantidad[0]}  "
-        txtCantCombo.text = "Combo Catlover\t x${carrito.cantidad[1]}  "
-        txtCantMochi1.text = "Pack Mochis 1\t x${carrito.cantidad[2]}  "
-        txtCantMochi2.text = "Pack Mochis 2\t x${carrito.cantidad[3]}  "
-        txtCantMichi.text = "Michidango\t x${carrito.cantidad[4]}  "
-        txtCantConchi.text = "Conchirilakkuma\t x${carrito.cantidad[5]}  "
+        txtCantPatiMiau.text = "Cafe PatiMiau\t x${carrito.cantidad[0]}\t\t"
+        txtCantCombo.text = "Combo Catlover\t x${carrito.cantidad[1]}\t\t"
+        txtCantMochi1.text = "Pack Mochis 1\t x${carrito.cantidad[2]}\t\t"
+        txtCantMochi2.text = "Pack Mochis 2\t x${carrito.cantidad[3]}\t\t"
+        txtCantMichi.text = "Michidango\t x${carrito.cantidad[4]}\t\t"
+        txtCantConchi.text = "Conchirilakkuma\t x${carrito.cantidad[5]}\t\t"
         txtImporte1.text = Importe1.toString()
         txtImporte2.text = Importe2.toString()
         txtImporte3.text = Importe3.toString()
