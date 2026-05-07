@@ -21,6 +21,7 @@ class Ticket : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
         val txtCantPatiMiau = findViewById<TextView>(R.id.txtCantPati)
         val txtCantCombo = findViewById<TextView>(R.id.txtCantCombo)
         val txtCantMochi1 = findViewById<TextView>(R.id.txtCantMochi1)
@@ -64,12 +65,12 @@ class Ticket : AppCompatActivity() {
 
         val Total = Total1 + Total2 + Total3 + Total4 + Total5 + Total6
 
-        txtCantPatiMiau.text = "Cafe PatiMiau x${carrito.cantidad[0]}  "
-        txtCantCombo.text = "Combo Catlover x${carrito.cantidad[1]}  "
-        txtCantMochi1.text = "Pack Mochis 1 x${carrito.cantidad[2]}  "
-        txtCantMochi2.text = "Pack Mochis 2 x${carrito.cantidad[3]}  "
-        txtCantMichi.text = "Michidango x${carrito.cantidad[4]}  "
-        txtCantConchi.text = "Conchirilakkuma x${carrito.cantidad[5]}  "
+        txtCantPatiMiau.text = "Cafe PatiMiau\t x${carrito.cantidad[0]}  "
+        txtCantCombo.text = "Combo Catlover\t x${carrito.cantidad[1]}  "
+        txtCantMochi1.text = "Pack Mochis 1\t x${carrito.cantidad[2]}  "
+        txtCantMochi2.text = "Pack Mochis 2\t x${carrito.cantidad[3]}  "
+        txtCantMichi.text = "Michidango\t x${carrito.cantidad[4]}  "
+        txtCantConchi.text = "Conchirilakkuma\t x${carrito.cantidad[5]}  "
         txtImporte1.text = Importe1.toString()
         txtImporte2.text = Importe2.toString()
         txtImporte3.text = Importe3.toString()
